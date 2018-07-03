@@ -16,7 +16,7 @@ class LuckyController
 {
 
     /**
-     * @Route("/lucky/number")
+     * @Route("/lucky/number", name="Standard_Number_Action")
      */
     public function numberAction()
     {
@@ -31,7 +31,7 @@ class LuckyController
     }
 
     /**
-     * @Route("/api/lucky/number")
+     * @Route("/api/lucky/number", name="API_Number_Action")
      */
     public function apiNumberAction()
     {
@@ -42,5 +42,21 @@ class LuckyController
                         array('Content-Type' => 'application/json')
                     );
     }
+
+    /**
+     * @Route("/lucky/number/{count}", name="Dynamic_Number_Action")
+     */
+    public function dynamicNumberAction($count)
+    {
+        $numbers = array();
+        for($i=0; $i<$count; $i++)
+        {
+            $numbers[] = rand(0, 100);
+        }
+        $numbersList = implode(",", $numbers);
+
+        return new Response('<html><body>Numbers : '.$numbersList.'</body></html>');
+    }
+
 
 }
