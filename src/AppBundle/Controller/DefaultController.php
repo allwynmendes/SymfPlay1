@@ -16,11 +16,12 @@ class DefaultController extends Controller
     {
         // replace this example code with whatever you need
         echo 'Text';
-        //$this->createAction('USB Drive', 15, '1PB USB 12.1 Drive');
+        //$this->createAction('Test Drive', 20, 'Test Product');
         //$this->showAction2(1);
         //$this->showAction3(15);.
-        $this->showAction4();
-
+        //$this->showAction4();
+        //$this->updateAction1(1, 'Keysword');
+        $this->deleteAction1(4);
         return $this->render('default/index.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
         ]);
@@ -88,4 +89,32 @@ class DefaultController extends Controller
             echo ' '.$i++.'. '.$prod->getName();
         }
     }
+
+    public function updateAction1($productId, $productName){
+        echo '\nInside updateAction1()';
+        $entityManager = $this->getDoctrine()->getManager();
+        $product = $entityManager->getRepository(Prouct::class)->find($productId);
+
+        if(!$product){
+            echo '\n Product Not Found';
+        }else{
+            $product->setName($productName);
+            $entityManager->flush();
+        }
+    }
+
+    public function deleteAction1($productId)
+    {
+        $entityManager = $this->getDoctrine()->getManager();
+        $product = $entityManager->getRepository(Prouct::class)->find($productId);
+
+        if(!$product){
+            echo '\n Product not found';
+        }else{
+            $entityManager->remove($product);
+            $entityManager->flush();
+        }
+
+    }
+
 }
