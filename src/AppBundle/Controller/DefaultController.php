@@ -18,7 +18,8 @@ class DefaultController extends Controller
         echo 'Text';
         //$this->createAction('USB Drive', 15, '1PB USB 12.1 Drive');
         //$this->showAction2(1);
-        $this->showAction3(15);
+        //$this->showAction3(15);.
+        $this->showAction4();
 
         return $this->render('default/index.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
@@ -78,5 +79,13 @@ class DefaultController extends Controller
         }
     }
 
-
+    public function showAction4(){
+        echo '\nInside showAction4()';
+        $repository = $this->getDoctrine()->getRepository(Prouct::class);
+        $product = $repository->findAll();
+        $i = 1;
+        foreach ($product as $prod){
+            echo ' '.$i++.'. '.$prod->getName();
+        }
+    }
 }
