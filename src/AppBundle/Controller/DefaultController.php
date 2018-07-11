@@ -20,8 +20,9 @@ class DefaultController extends Controller
         //$this->showAction2(1);
         //$this->showAction3(15);.
         //$this->showAction4();
+        $this->showAction5(15);
         //$this->updateAction1(1, 'Keysword');
-        $this->deleteAction1(4);
+        //$this->deleteAction1(4);
         return $this->render('default/index.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
         ]);
@@ -85,6 +86,19 @@ class DefaultController extends Controller
         $repository = $this->getDoctrine()->getRepository(Prouct::class);
         $product = $repository->findAll();
         $i = 1;
+        foreach ($product as $prod){
+            echo ' '.$i++.'. '.$prod->getName();
+        }
+    }
+
+    public function showAction5($price){
+        echo '\nInside showAction5()';
+        $repository = $this->getDoctrine()->getRepository(Prouct::class);
+        $product = $repository->findOneByPrice($price);
+        $i = 1;
+        echo $product->getName();
+
+        //Below code does not work with findOneBy()
         foreach ($product as $prod){
             echo ' '.$i++.'. '.$prod->getName();
         }
