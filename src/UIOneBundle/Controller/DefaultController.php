@@ -18,13 +18,13 @@ class DefaultController extends Controller
                 'id' => '1',
                 'name' => 'Keyboard',
                 'price' => 20,
-                'desc' => 'Dope'
+                'description' => 'Dope'
             ],
             [
                 'id' => '2',
                 'name' => 'Mouse',
                 'price' => 15,
-                'desc' => 'Dopper'
+                'description' => 'Dopper'
             ]
         ];
         return $this->render('@UIOneBundle/Resources/views/Default/index.html.twig', ['products' => $products] );
