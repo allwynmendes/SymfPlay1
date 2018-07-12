@@ -10,19 +10,39 @@ use Symfony\Component\HttpFoundation\Request;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/", name="homepage")
+     * @Route("/{options}", name="homepage")
      */
-    public function indexAction(Request $request)
+    public function indexAction(Request $request, $options)
     {
-        // replace this example code with whatever you need
-        echo 'Text';
-        //$this->createAction('Test Drive', 20, 'Test Product');
-        //$this->showAction2(1);
-        //$this->showAction3(15);.
-        //$this->showAction4();
-        $this->showAction5(15);
-        //$this->updateAction1(1, 'Keysword');
-        //$this->deleteAction1(4);
+        switch($options){
+            case 1:
+                $this->createAction('Test Drive', 20, 'Test Product');
+                break;
+            case 2:
+                $this->showAction2(1);
+                break;
+            case 3:
+                $this->showAction3(15);
+                break;
+            case 4:
+                $this->showAction4();
+                break;
+            case 5:
+                $this->showAction5(15);
+                break;
+            case 6:
+                $this->updateAction1(1, 'Keysword');
+                break;
+            case 7:
+                $this->deleteAction1(4);
+                break;
+            case 8:
+                echo 'This is Test Case 8';
+                break;
+            default:
+                break;
+        }
+
         return $this->render('default/index.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
         ]);
