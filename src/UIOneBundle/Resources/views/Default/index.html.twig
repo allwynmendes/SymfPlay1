@@ -1,1 +1,10 @@
-Hello World!
+
+{% block content %}
+    {% for prod in products %}
+        {{ prod.id }}
+        {{ prod.name }}
+        {{ prod.price }}
+        {{ prod.description }}
+        <br>
+    {% endfor %}
+{% endblock %}

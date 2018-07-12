@@ -2,7 +2,7 @@
 
 namespace AppBundle\Controller;
 
-use AppBundle\Entity\Prouct;
+use AppBundle\Entity\Product;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -16,7 +16,7 @@ class DefaultController extends Controller
     {
         switch($options){
             case 1:
-                $this->createAction('Test Drive', 20, 'Test Product');
+                $this->createAction('Keysowrd', 20, 'Bland and Boring');
                 break;
             case 2:
                 $this->showAction2(1);
@@ -53,13 +53,13 @@ class DefaultController extends Controller
         echo '/nInside createAction()';
         $entityManager = $this->getDoctrine()->getManager();
 
-        $product = new Prouct();
+        $product = new Product();
         $product->setName($name);
         $product->setPrice($price);
         $product->setDescription($desc);
 
         $entityManager->persist($product);
-        $entityManager->flush();
+        //$entityManager->flush();
 
         //return new Response('Saved new product with id '.$product->getId());
     }
@@ -77,7 +77,7 @@ class DefaultController extends Controller
     public function showAction2($productId)
     {
         echo '\nInside showAction2()';
-        $repository = $this->getDoctrine()->getRepository(Prouct::class);
+        $repository = $this->getDoctrine()->getRepository(Product::class);
         $product = $repository->find($productId);
 
         if(!$product){
@@ -89,7 +89,7 @@ class DefaultController extends Controller
 
     public function showAction3($price){
         echo '\nInside showAction3()';
-        $repository = $this->getDoctrine()->getRepository(Prouct::class);
+        $repository = $this->getDoctrine()->getRepository(Product::class);
         $product = $repository->findByPrice($price);
 
         if(!$product){
@@ -103,7 +103,7 @@ class DefaultController extends Controller
 
     public function showAction4(){
         echo '\nInside showAction4()';
-        $repository = $this->getDoctrine()->getRepository(Prouct::class);
+        $repository = $this->getDoctrine()->getRepository(Product::class);
         $product = $repository->findAll();
         $i = 1;
         foreach ($product as $prod){
@@ -113,7 +113,7 @@ class DefaultController extends Controller
 
     public function showAction5($price){
         echo '\nInside showAction5()';
-        $repository = $this->getDoctrine()->getRepository(Prouct::class);
+        $repository = $this->getDoctrine()->getRepository(Product::class);
         $product = $repository->findOneByPrice($price);
         $i = 1;
         echo $product->getName();
@@ -127,7 +127,7 @@ class DefaultController extends Controller
     public function updateAction1($productId, $productName){
         echo '\nInside updateAction1()';
         $entityManager = $this->getDoctrine()->getManager();
-        $product = $entityManager->getRepository(Prouct::class)->find($productId);
+        $product = $entityManager->getRepository(Product::class)->find($productId);
 
         if(!$product){
             echo '\n Product Not Found';
@@ -140,7 +140,7 @@ class DefaultController extends Controller
     public function deleteAction1($productId)
     {
         $entityManager = $this->getDoctrine()->getManager();
-        $product = $entityManager->getRepository(Prouct::class)->find($productId);
+        $product = $entityManager->getRepository(Product::class)->find($productId);
 
         if(!$product){
             echo '\n Product not found';
@@ -148,7 +148,5 @@ class DefaultController extends Controller
             $entityManager->remove($product);
             $entityManager->flush();
         }
-
     }
-
 }

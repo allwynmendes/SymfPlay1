@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="prouct")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\ProuctRepository")
  */
-class Prouct
+class Product
 {
     /**
      * @var int
@@ -58,7 +58,7 @@ class Prouct
      *
      * @param string $name
      *
-     * @return Prouct
+     * @return Product
      */
     public function setName($name)
     {
@@ -82,7 +82,7 @@ class Prouct
      *
      * @param integer $price
      *
-     * @return Prouct
+     * @return Product
      */
     public function setPrice($price)
     {
@@ -106,7 +106,7 @@ class Prouct
      *
      * @param string $description
      *
-     * @return Prouct
+     * @return Product
      */
     public function setDescription($description)
     {
