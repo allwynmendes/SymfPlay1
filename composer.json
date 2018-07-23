@@ -6,7 +6,8 @@
     "autoload": {
         "psr-4": {
             "AppBundle\\": "src/AppBundle",
-            "UIOneBundle\\": "src/UIOneBundle"
+            "UIOneBundle\\": "src/UIOneBundle",
+	    "TodoBundle\\": "src/TodoBundle"
         },
         "classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
     },
