@@ -1,8 +1,8 @@
-<div class="home-page">
-    <h1>TodoList</h1>
-</div>
-</br>
-<div class="textbox">
-    <input type="text" name="todolist">
-    <button type="button">Add</button>
-</div>
+{% extends '::base.html.twig' %}
+
+{% block body %}
+    <h1>ToDo</h1>
+    <div classs="container">
+        {{ form(ourForm) }}
+    </div>
+{%  endblock %}

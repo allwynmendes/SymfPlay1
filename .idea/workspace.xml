@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21f05bcc-ffc8-4923-9237-c5aeaec0fd36" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/SymfPlay1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SymfPlay1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dbcf3d35-f707-44cb-8b1d-16c8f4f0cfaa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dbcf3d35-f707-44cb-8b1d-16c8f4f0cfaa.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routing.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TodoBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/TodoBundle/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TodoBundle/Resources/views/todohome.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/TodoBundle/Resources/views/todohome.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -61,32 +57,28 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="TodoList.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TodoBundle/Entity/TodoList.php">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-495" />
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TodoBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="14" column="57" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
+            <state relative-caret-position="480">
+              <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+              <folding>
+                <element signature="e#41#100#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UIOneBundle/Controller/DefaultController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="29" column="82" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="todohome.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="todohome.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TodoBundle/Resources/views/todohome.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -117,8 +109,8 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Prouct.php" />
         <option value="$PROJECT_DIR$/src/UIOneBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/ProductBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/src/TodoBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/TodoBundle/Resources/views/todohome.html.twig" />
+        <option value="$PROJECT_DIR$/src/TodoBundle/Controller/DefaultController.php" />
       </list>
     </option>
   </component>
@@ -176,10 +168,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2081" />
-    <option name="y" value="50" />
+    <option name="x" value="2050" />
+    <option name="y" value="48" />
     <option name="width" value="1566" />
-    <option name="height" value="1143" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -213,59 +205,7 @@
               <item name="SymfPlay1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="TodoBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SymfPlay1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SymfPlay1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="TodoBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SymfPlay1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SymfPlay1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="TodoBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SymfPlay1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SymfPlay1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="UIOneBundle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SymfPlay1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SymfPlay1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="UIOneBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SymfPlay1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SymfPlay1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="UIOneBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SymfPlay1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SymfPlay1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="UIOneBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SymfPlay1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SymfPlay1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="UIOneBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Default" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -331,12 +271,13 @@
       <workItem from="1530611161927" duration="203000" />
       <workItem from="1530613410587" duration="4979000" />
       <workItem from="1530629219088" duration="254000" />
-      <workItem from="1532359203681" duration="4105000" />
+      <workItem from="1532359203681" duration="7382000" />
+      <workItem from="1532441582186" duration="3243000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28609000" />
+    <option name="totallyTimeSpent" value="35129000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -348,10 +289,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2081" y="50" width="1566" height="1143" extended-state="0" />
+    <frame x="2050" y="48" width="1566" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15723684" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15921053" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -424,10 +365,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="20" column="38" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="38" />
-          <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
-            <element signature="e#121#178#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -463,10 +400,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-          <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
-            <element signature="e#121#178#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -508,10 +441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="20" column="38" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="38" />
-          <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
-            <element signature="e#121#178#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -662,10 +591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-          <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
-            <element signature="e#121#178#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -696,16 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TodoBundle/Entity/TodoList.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TodoBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="57" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UIOneBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -716,7 +631,22 @@
     <entry file="file://$PROJECT_DIR$/src/TodoBundle/Resources/views/todohome.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TodoBundle/Entity/TodoList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-495" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TodoBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+          <folding>
+            <element signature="e#41#100#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
